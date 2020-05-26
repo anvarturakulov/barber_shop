@@ -22,6 +22,13 @@ $(function(){
       arrows:true,
     });
 
+    $(".style__inner").slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      dots: true,
+      arrows:true,
+    });
+
     // jQuery("a.scrollto").click(function () {
     //   elementClick = jQuery(this).attr("href")
     //   destination = jQuery(elementClick).offset().top-20;
