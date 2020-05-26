@@ -155,6 +155,7 @@
 
 .wooden{
     background-color: #fff;
+    padding-bottom: 50px;
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -171,6 +172,103 @@
         max-width: 500px;
     }
 }
+
+.review{
+    min-height: 640px;
+    @include ibg;
+    &__inner{
+        padding: 200px 270px 230px 270px;
+    }
+    &__item{
+        background-color: #eb706b;
+        color: #000;
+        text-align: center;
+        padding: 70px 45px;
+    }
+}
+
+
+.slick-list.draggable{
+    text-align: center;
+    position: relative;
+    
+}
+
+.slick-next{
+    position: absolute;
+    font-size: 0px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: 45%;
+    right: -7%;
+    cursor: pointer;
+    outline: none;
+    &::before{
+        position: absolute;
+        content: '\f101';
+        font-family: 'icomoon';
+        font-size: 50px;
+        color: #eb706b;
+        top:-6px;
+        left: 8px;
+    }
+}
+
+.slick-prev{
+    position: absolute;
+    font-size: 0px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: 45%;
+    left: -5%;
+    cursor: pointer;
+    outline: none;
+    &::before{
+        position: absolute;
+        content: '\f100';
+        font-family: 'icomoon';
+        font-size: 50px;
+        color: #eb706b;
+        top:-6px;
+        left: 5px;
+    }
+}
+.slick-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slick-dots{
+    margin-top: 10px;
+    li{
+        &.slick-active{
+            button{
+                background-color: #eb706b;
+            }
+        }
+        display: inline-block;
+        &+li{
+            margin-left: 10px;
+        }
+        button{
+            outline: none;
+            font-size: 0px;
+            border: none;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+    }
+}
+
+
 //End
 
 @import 'media';
