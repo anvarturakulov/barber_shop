@@ -152,6 +152,25 @@
     top: 20%;
 }
 
+
+.wooden{
+    background-color: #fff;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 130px;
+    }
+    &__img{
+        img{
+            width: 460px;
+            height: 390px;
+            @include ibg;
+        }
+    }
+    &__infobox{
+        max-width: 500px;
+    }
+}
 //End
 
 @import 'media';
