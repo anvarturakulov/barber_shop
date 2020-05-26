@@ -27,6 +27,36 @@ $(function(){
       slidesToScroll: 3,
       dots: true,
       arrows:false,
+      responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 1300,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 1050,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
 
     jQuery("a.scrollto").click(function () {
@@ -36,9 +66,9 @@ $(function(){
       return false;
     });
     
-    // $('.menu__btn').on('click',function(){
-    //   $('.menu').slideToggle();
-    // });
+    $('.menu__btn').on('click',function(){
+      $('.menu').slideToggle();
+    });
 });
 
 

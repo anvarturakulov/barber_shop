@@ -2,3 +2,438 @@
 @import 'global';
 @import 'fonts';
 
+
+@media (max-width: 1250px){
+    .barber{
+        &__inner{
+            padding-top: 100px;
+        }
+        background-color: #fff;
+        &__infobox{
+            margin-top: 60px;
+            max-width: 350px;
+        }
+        &-title{
+            font-size: 36px;
+            line-height: 36px;
+        }
+        
+        &__imgbox{
+            width: 450px;
+            height: 450px;
+        }
+        &-img{
+            height: 250px;
+            width: 250px;
+        }
+    }
+        
+}
+
+@media (max-width: 1050px){
+    
+}
+
+@media (max-width: 960px){
+    .review{
+        min-height: 450px;
+        &__inner{
+            padding: 100px 100px 30px;
+        }
+        &__item{
+            padding: 70px 45px;
+        }
+    }
+    .slick-next{
+        right: 5%;
+    }
+    .slick-prev{
+        left: 5%;
+    }
+
+    .price{
+        margin-top: 10px;
+        &__inner{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        &__img{
+            max-width: 480px;
+            width: 100%;
+            min-height: 400px;
+        }
+        &__info{
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+            margin-left: 50px;
+        }
+        &-title{
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .ulbox{
+            display: flex;
+            margin-top: 30px;
+        }
+        .price-name{
+            font-size: 20px;
+            li+li{
+                margin-top: 30px;    
+            }
+    
+        }
+        .price-price{
+            font-size: 20px;
+            li+li{
+                margin-top: 30px;    
+            }
+            margin-left: 80px;
+            font-weight: 600;
+        }
+    }
+    
+}
+
+@media (max-width: 885px){
+    .barber{
+        &__inner{
+            padding-top: 50px;
+        }
+        &__infobox{
+            margin-top: 20px;
+            max-width: 350px;
+            
+        }
+        &-title{
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &-text{
+            font-size: 16px;
+            padding-right: 15px;
+        }
+    
+        
+        &__imgbox{
+            width: 400px;
+            height: 400px;
+        }
+        &-img{
+            height: 200px;
+            width: 200px;
+        }
+    }
+   
+    .contact__info{
+        max-width: 500px;
+        width: 100%;
+    }
+    .contact-title{
+        font-size: 30px;
+        max-width: 500px;
+    }
+    .contact__map{
+        margin-top: 30px;
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px){
+    .barber-title{
+        text-align: center;
+    }
+    .review{
+        min-height: 370px;
+        &__inner{
+            padding: 50px 50px 30px;
+        }
+        &__item{
+            padding: 50px 45px;
+        }
+    }
+    .slick-next{
+        right: 0%;
+    }
+    .slick-prev{
+        left: 1%;
+    }
+}
+
+@media (max-width: 725px){
+    .menu__btn{
+        position: absolute;
+        right: 10px;
+        top: 25px;
+        display: inline-block;
+        cursor: pointer;
+        div{
+            margin-right: auto;
+            height: 5px;
+            width: 30px;
+            margin: 5px;
+            background-color: #fff;
+        }
+        border: 1px solid $text;
+        margin-right: 0px;
+    }
+
+    .menu{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 100px;
+        left: 0px;
+        ul{
+            width: 100vw;
+            li{
+                display: block;
+                background-color: #fff;
+                border-bottom: 1px solid #000;
+                padding: 0px 0px;
+                text-align: center;
+                a{
+                    width: 100%;
+                    color: #000;
+                    padding: 15px 0px;
+                    font-size: 14px;
+                    line-height: 18px;
+                    &:hover{
+                        color: #000;
+                    }
+                }
+                &+li{
+                    margin-left: 0;
+                }
+                &:first-child{
+                    border-top: 1px solid #000;
+                }
+            }
+        }
+    }
+    .header__menu{
+        background-color: transparent;
+        margin-top: 10px;
+        border: none;
+    }
+
+    .header__note{
+        min-height: 500px;
+        
+        &-box{
+            left: 20px;
+            top: 100px;
+            max-width: 500px;
+            width: 100%;
+        }
+        &-title{
+            font-size: 36px;
+        }
+
+        &-link{
+            font-size: 14px;    
+            padding: 10px 15px;
+        }
+
+    }
+
+    .sale{
+        left: -65px;
+        top: 40px;
+        background-color: rgba(210,0,27,0.8);
+        font-size: 16px;
+        padding: 10px 5px;
+        width: 300px;
+    }
+
+    
+}
+
+@media (max-width: 600px){
+    .wooden__inner{
+        padding-top: 50px;
+    }
+    .wooden__img{
+        img{
+            width: 360px;
+            height: 290px;
+        }
+    }
+}
+
+@media (max-width: 550px){
+    .price__img{
+        min-height: 300px;
+        
+    }
+
+    .contact__info{
+        max-width: 500px;
+        width: 90%;
+    }
+    .contact-title{
+        font-size: 30px;
+        max-width: 500px;
+    }
+    .contact__map{
+        margin-top: 30px;
+        max-width: 500px;
+        width: 90%;
+        min-height: 350px;
+        iframe{
+            width: 100%;
+            height: 300px;
+
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .header__note{
+        min-height: 400px;
+        &-box{
+            left: 20px;
+            top: 20px;
+            max-width: 300px;
+            width: 100%;
+        }
+        &-title{
+            font-size: 24px;
+        }
+
+        &-link{
+            font-size: 14px;    
+            padding: 10px 15px;
+        }
+        .ulbox{
+            ul{
+                font-size: 16px;
+                margin-right: 10px;
+            }
+        }
+    }   
+    #modal{
+        padding: 25px 10px;
+        .login__title{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        form{
+            max-width: 250px;
+            font-size: 18px;
+            input{
+                margin-bottom: 10px;
+                padding: 3px 10px;
+            }
+            button{
+                color: #000;
+                padding: 5px 10px;
+            }
+        }
+    }
+    .review{
+        min-height: 250px;
+        &__inner{
+            padding: 40px 25px 10px;
+        }
+        &__item{
+            padding: 10px 10px;
+            font-size: 14px;
+        }
+    }
+    .slick-next{
+        right: -4%;
+    }
+    .slick-prev{
+        left: -4%;
+    }
+}
+
+@media (max-width: 450px){
+    .price__info{
+        margin-left: 10px;
+    }
+    .price-title{
+        font-size: 24px;
+    }
+    .ulbox{
+        li{
+            font-size: 16px;
+            width: 200px;
+        }
+    }
+    .price-price{
+        margin-left: 30px;
+    }
+}
+
+
+@media (max-width: 400px){
+    .barber{
+        &__inner{
+            padding-top: 0px;
+        }
+        &__infobox{
+            margin-top: 30px;
+            max-width: 350px;
+        }
+        &-title{
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &-text{
+            font-size: 14px;
+        }
+    
+        
+        &__imgbox{
+            width: 300px;
+            height: 300px;
+        }
+        &-img{
+            height: 150px;
+            width: 150px;
+        }
+    }
+
+    .wooden__img{
+        img{
+            width: 260px;
+            height: 190px;
+        }
+    }
+    .style-title{
+        font-size: 36px;
+    }
+    .contact-title{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+}
+@media (max-width: 350px){
+    .price-price{
+        margin-left: 0px;
+    }
+    .ulbox{
+        li{
+            font-size: 14px;
+            width: 180px;
+        }
+    }
+    .price__info{
+        margin-left: 10px;
+        padding: 10px;
+    }
+}
+// end
+
+@media (min-width: 726px){
+    .menu{
+        display: block;
+    }
+}
