@@ -26,7 +26,7 @@ $(function(){
       slidesToShow: 5,
       slidesToScroll: 1,
       dots: true,
-      arrows:true,
+      arrows:false,
     });
 
     // jQuery("a.scrollto").click(function () {
